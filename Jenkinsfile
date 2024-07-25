@@ -12,14 +12,14 @@ pipeline {
         stage('Install dependencies') {
             steps {
                 // Instala as dependências
-                sh 'pip3 install -r requirements.txt'
+                sh 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
                 // Executa os testes unitários
-                sh 'python3 -m unittest discover'
+                sh 'python -m unittest discover'
             }
         }
     }
