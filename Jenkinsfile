@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 // Clona o repositório
-                git 'https://github.com/Newtoun/trabalhoJenkins.git'
+                git branch: 'main', url: 'https://github.com/Newtoun/trabalhoJenkins.git'
             }
         }
 
