@@ -5,14 +5,14 @@ pipeline {
         stage('Clone') {
             steps {
                 // Clona o repositório
-                git 'https://seu-repositorio.git'
+                git 'https://github.com/Newtoun/trabalhoJenkins.git'
             }
         }
 
         stage('Install dependencies') {
             steps {
                 // Instala as dependências
-                sh 'pip install -r requeriment.txt'
+                sh 'pip install -r requirements.txt'
             }
         }
 
